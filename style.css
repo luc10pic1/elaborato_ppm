@@ -42,6 +42,15 @@ article:hover a {
     color: #0077DA;
 }
 
+a{
+    transition: color 0.3s;
+}
+
+a:hover{
+    color: #0077DA;
+
+}
+
 span[data-theme="NEWS"] {
     background-color: #98ba48;
 }
@@ -99,6 +108,25 @@ div.section-trending__title::before {
     content: "\ee53";
     display: inline-block;
 }
+
+.more_videos::before{
+    font-family: Icomoon;
+    content: "\ee53";
+    display: inline-block;
+}
+
+.more_videos::after{
+    font-family: Icomoon;
+    content: "\ee53";
+    display: inline-block;
+}
+
+.photo_blog::before{
+    font-family: Icomoon;
+    content: "\ee53";
+    display: inline-block;
+}
+
 
 
 .article-trending__title{
