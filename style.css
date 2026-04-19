@@ -92,19 +92,100 @@ span[data-theme="LOCAL"] {
 
 .nav_link li{
     display: inline-block;
-    border-right: 1px solid #000000;
 }
 
-.nav_link a{
+.nav_link__first_header li{
+    border-right: 1px solid #000000;
+
+}
+
+.nav_link__first_header a{
     font-weight: 700;
     font-size:14px;
     padding: 0 9px;
     transition:  color 0.2s ;
 }
 
-.nav_link li:hover a{
+
+.nav_link__first_header li:hover a{
     color:#717171
 }
+
+.nav_link__sec_header ul{
+    margin-top: auto;
+    margin-bottom: 0;
+}
+
+.header__button{
+    margin-right: 0.6rem;
+    padding: 0.5rem 0.8rem;
+    border: 1px solid #777;
+    border-radius: 5px;
+}
+
+.button-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav_link__sec_header__center ul{
+    display: inline-block;
+    margin-top: 8px ;
+    padding: 0;
+    position: relative;
+    height: 50px;
+}
+
+.nav_link__sec_header__right ul{
+    margin-top:8px;
+}
+
+.nav_link__sec_header__center{
+
+}
+
+.nav_link__sec_header__center li{
+    border-right: 1px solid #ffffff;
+}
+
+.nav_link__sec_header__center a{
+    color:white;
+    font-size:1.3rem;
+    transition:color 0.2s;
+    font-weight: normal;
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+}
+
+.nav_link__sec_header__right{
+    margin:0;
+    padding:0;
+}
+
+.nav_link__sec_header__center li:hover a{
+    color:#aaa;
+}
+
+.nav_link__sec_header{
+    margin-top: 12.5px;
+    padding-right: 0;
+}
+
+.nav_link__sec_header a{
+    color:white;
+    font-size: 1.0rem;
+    font-weight: normal;
+}
+
+.nav_link__sec_header li:hover{
+    background-color: white;
+}
+.nav_link__sec_header li:hover a{
+    color: black;
+}
+
 
 .article__justin a {
     font-size: 1.4rem;
@@ -135,6 +216,18 @@ div.section-trending__title::before {
     display: inline-block;
 }
 
+.nav_link__sec_header__center--after::after{
+    content: "";
+    position: absolute;
+    right: 0;
+    height: 14px;
+    width: 1px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    margin: auto 0 ;
+}
+
 .more_videos::before{
     font-family: Icomoon;
     content: "\ee53";
@@ -152,6 +245,12 @@ div.section-trending__title::before {
     content: "\ee53";
     display: inline-block;
 }
+
+.header__navigation_bar button{
+    border: none;
+    background-color: inherit;
+}
+
 
 .header__date{
     font-size:14px;
