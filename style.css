@@ -2,6 +2,7 @@
 html {
     font-size: 10px;
     font-family: proxima-nova, Roboto, Arial, san-serif;
+    overflow-x: hidden;
 }
 
 .bg-grey {
@@ -106,6 +107,9 @@ span[data-theme="LOCAL"] {
     transition:  color 0.2s ;
 }
 
+header img{
+    max-width: none;
+}
 
 .nav_link__first_header li:hover a{
     color:#717171
@@ -117,11 +121,11 @@ span[data-theme="LOCAL"] {
 }
 
 .header__button{
-    margin-right: 0.6rem;
     padding: 0.5rem 0.8rem;
     border: 1px solid #777;
     border-radius: 5px;
 }
+
 
 .button-menu{
     display: flex;
