@@ -9,8 +9,8 @@
 </head>
 <body>
 <header>
-    <div class="container-fluid px-0 mt-4 bg-white">
-        <div class="row " style="height: 70px">
+    <div class="container-fluid px-0  bg-white">
+        <div class="row  d-none d-md-block" style="height: 70px;margin-top: 6px">
             <div class="col-12 d-none d-md-block text-center">
                 <a href="#"><img src="https://placehold.co/350x45" alt="logo"></a>
             </div>
@@ -32,7 +32,12 @@
                 </div>
             </div>
         </div>
-        <div class="row gx-0 d-none d-md-flex header__navigation_bar">
+    </div>
+</header>
+
+<div class="sticky-top">
+    <div class="row gx-0 header__navigation_bar ">
+        <div class="d-none d-md-flex">
             <div class="col-3 text-start">
                 <div class="row g-1">
                     <div class="col-2">
@@ -67,7 +72,8 @@
             </nav>
             <div class="col-3 nav_link  me-lg-0 ms-auto  text-end">
                 <div class="position-relative nav_link__sec_header mt-0">
-                    <ul class="position-absolute d-flex gap-2 text-nowrap" style="margin-top:8px; padding: 0;right: 2px">
+                    <ul class="position-absolute d-flex gap-2 text-nowrap"
+                        style="margin-top:8px; padding: 0;right: 2px">
                         <li><a href=""><img src="https://placehold.co/27x27" alt=""></a></li>
                         <li><a href=""><img src="https://placehold.co/27x27" alt=""></a></li>
                         <li><a href=""><img src="https://placehold.co/27x27" alt=""></a></li>
@@ -77,19 +83,23 @@
                 </div>
             </div>
         </div>
-        <div class="row d-md-none">
-            <div class="col-2 text-start">
-
+        <div class="d-md-none position-relative">
+            <div class="position-absolute" style="left:0">
+                <button class="button-menu">
+                    <span style="font-size: 2.7rem"><img src="https://placehold.co/27x27" alt=""></span>
+                    <span style="font-size:0.8rem ">MENU</span>
+                </button>
             </div>
-            <div class="col-8 text-center">
+            <div class="w-100 text-center position-absolute" style="margin-top: 6px"><a href="#"><img
+                    src="https://placehold.co/30x30" alt=""></a></div>
 
+            <div class="position-absolute" style="right:0;margin-right: 3px;margin-top: 6px">
+                <a href="#"><img src="https://placehold.co/30x30" alt=""></a>
             </div>
-            <div class="col-2 text-end">
 
-            </div>
         </div>
     </div>
-</header>
+</div>
 <div class="container px-5 mt-5">
     <div class="row mb-3 g-3 d-none d-sm-block">
         <div class="col-sm-12 col-lg-8 offset-lg-2 bg-grey text-dark text-center" style="height: 90px">
