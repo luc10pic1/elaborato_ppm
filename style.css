@@ -399,6 +399,19 @@ div.section-trending__title::before {
     left: 0;
 }
 
+.article-secondary__title{
+    font-size: 2rem;
+    bottom:10px;
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width: 992px){
+    .article-secondary__title{
+        font-size: 1.7rem;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .article__theme {
         top: 0;
