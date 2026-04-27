@@ -100,6 +100,10 @@ span[data-theme="LOCAL"] {
 
 }
 
+.border-top-4px-solid{
+    border-top: 4px solid #222;
+}
+
 .nav_link__first_header a{
     font-weight: 700;
     font-size:14px;
@@ -311,7 +315,7 @@ div.section-trending__title::before {
 }
 
 .section__title {
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: 700;
 }
 
@@ -364,8 +368,15 @@ div.section-trending__title::before {
     font-size: 16px;
     color: #111;
     transition: color 0.3s;
+    font-weight: 700;
     line-height: 1.3;
 }
+
+.article__title--border-bottom{
+    border-bottom: 1px solid #eee;
+}
+
+
 
 .article__theme {
     position: absolute;
@@ -412,6 +423,13 @@ div.section-trending__title::before {
     }
 }
 
+@media (min-width: 768px) {
+    .border-md-none{
+        border: none;
+    }
+
+}
+
 @media screen and (max-width: 768px) {
     .article__theme {
         top: 0;
@@ -419,6 +437,8 @@ div.section-trending__title::before {
         bottom: auto;
         left: auto;
     }
+
+
 
 }
 
