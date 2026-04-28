@@ -1,3 +1,8 @@
+ul li a{
+    display: block;
+    width: 100%;
+}
+
 
 html {
     font-size: 10px;
@@ -49,7 +54,10 @@ a{
 
 a:hover{
     color: #0077DA;
+}
 
+a:hover .article__title--hover{
+    color: #0077DA;
 }
 
 span[data-theme="NEWS"] {
@@ -125,9 +133,21 @@ header img{
 }
 
 .header__button{
-    padding: 0.5rem 0.8rem;
+    padding:0.5rem 0.8rem;
     border: 1px solid #777;
     border-radius: 5px;
+
+}
+
+.header__button button{
+    height: auto;
+    width: auto;
+    font-size: 1rem;
+}
+
+.header__button li:hover button{
+    background-color: white;
+    color: black;
 }
 
 
@@ -156,7 +176,6 @@ header img{
 }
 
 .nav_link__sec_header__center li{
-    border-right: 1px solid #ffffff;
 }
 
 .nav_link__sec_header__center a{
@@ -166,6 +185,13 @@ header img{
     font-weight: normal;
     padding-left: 0.6rem;
     padding-right: 0.6rem;
+    border-right: 1px solid #ffffff;
+
+}
+
+.nav_link__sec_header__center li{
+
+
 }
 
 .nav_link__sec_header__right{
@@ -173,8 +199,18 @@ header img{
     padding:0;
 }
 
-.nav_link__sec_header__center li:hover a{
+.nav_link__sec_header__center a:hover{
     color:#aaa;
+}
+
+.subnav{
+    background-color: #222;
+    color: white;
+    display: none;
+}
+
+.nav_link__sec_header__center a:hover .subnav{
+    display: block;
 }
 
 .nav_link__sec_header{
@@ -197,6 +233,13 @@ header img{
 
 
 .article__justin a {
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    font-weight: normal;
+}
+
+
+.article__justin--title{
     font-size: 1.4rem;
     line-height: 1.7rem;
     font-weight: normal;
@@ -417,6 +460,8 @@ div.section-trending__title::before {
     justify-content: center;
 }
 
+
+
 @media (min-width: 992px){
     .article-secondary__title{
         font-size: 1.7rem;
@@ -430,6 +475,22 @@ div.section-trending__title::before {
 
 }
 
+
+
+@media screen and (max-width: 992px){
+    .section__title__span--border-top{
+        width: 100%;
+        border-top: solid 4px rgb(34, 34, 34)
+    }
+
+    .article__justin--title{
+        font-family: proxima-nova, Roboto, Arial, san-serif;
+        font-size: 18px;
+        line-height: 1.35;
+        font-weight: bold;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .article__theme {
         top: 0;
@@ -438,15 +499,22 @@ div.section-trending__title::before {
         left: auto;
     }
 
-
-
-}
-
-@media screen and (max-width: 992px){
-    .section__title__span--border-top{
-        width: 100%;
-        border-top: solid 4px rgb(34, 34, 34)
+    .article__justin--title{
+        font-family: proxima-nova, Roboto, Arial, san-serif;
+        font-size: 16px;
+        line-height: 1.2;
+        font-weight: 700;
     }
+/*
+    .bg-xs-sm-grey{
+        background-color: #eee;
+    }
+
+    .bg-xs-sm-grey section div{
+        background-color: white;
+        border-top: 1px solid #ddd;
+    }
+*/ /* TODO sfondo grigio quando è piccolo*/
 }
 
 
