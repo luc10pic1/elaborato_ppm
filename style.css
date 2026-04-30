@@ -88,8 +88,52 @@ div[data-theme="A&E"]{
     border-color: #d75da6;
 }
 
+div[data-theme="LOCAL"]{
+    border-color: #e2cd3e;
+}
+
+div[data-theme="SPORTS"]{
+    border-color: #d48e45;
+}
+
+div[data-theme="BUSINESS"]{
+    border-color: #7389d9;
+}
+
+div[data-theme="LIFE"]{
+    border-color: #b066d3;
+}
+
+div[data-theme="GOODNESS"]{
+    border-color: #b066d3;
+}
+
+div[data-theme="NEWS"]{
+    border-color: #98ba48;
+}
+
+div[data-theme="INSIGHT"]{
+    border-color: #98ba48;
+}
+
+div[data-theme="OPINION"]{
+    border-color: #d76563;
+}
+
+div[data-theme="STEELERS"]{
+    border-color: #d48e45;
+}
+
+
+
+
 .color-red {
     color: #B2281F;
+}
+
+.h-calc-50s1p5{
+    height: calc(50px + 1.5rem);
+    display: block;
 }
 
 .header__navigation_bar{
@@ -114,6 +158,26 @@ div[data-theme="A&E"]{
 
 .border-top-4px-solid{
     border-top: 4px solid #222;
+}
+
+.lh-1p3{
+    line-height: 1.3rem;
+}
+
+.f-fam{
+    font-family: proxima-nova,Roboto,Arial,san-serif;
+}
+
+.fw-550{
+    font-weight: 550;
+}
+
+.fw-400{
+    font-weight: 400;
+}
+
+.lh-2{
+    line-height: 2rem;
 }
 
 .nav_link__first_header a{
@@ -199,8 +263,18 @@ header img{
 }
 
 .art-img-opacity:hover .article__title--hover-shadow {
-    box-shadow: inset 0 0 60px 25px rgba(0,0,0,0.75);
+    transition: opacity 0.3s;
+    opacity: 0.7;
     display: block;
+}
+
+.art-img-opacity:hover .art-div-opacity{
+    background-color: black;
+    z-index: -1;
+}
+
+.art-img-opacity:hover span{
+    background-color: transparent;
 }
 
 .nav_link__sec_header__right{
@@ -300,6 +374,12 @@ div.section-trending__title::before {
     content: "\ee53";
     display: inline-block;
 }
+
+.border-lat{
+    border-left: 1px solid;
+    border-right:1px solid ;
+}
+
 
 .header__link--after_freccia::after{
     font-family: Icomoon;
@@ -487,6 +567,18 @@ div.section-trending__title::before {
     color: #333;
 }
 
+.col-222{
+    color: #222;
+}
+
+@media (min-width: 1400px) {
+
+    .w-lg-325{
+        width: auto !important;
+    }
+
+}
+
 @media (min-width: 1200px) {
     .fs-xl-1p9{
         font-size: 1.9rem;
@@ -502,7 +594,14 @@ div.section-trending__title::before {
         font-size: 1.7rem;
     }
 
+    .border-lg-end{
+        border-right: 1px solid;
+        border-right-color:rgb(222,226,230) ;
+    }
 
+    .border-lg-0{
+        border: 0 !important;
+    }
 
     .col-lg-fissa{
         flex: 0 0 300px;
