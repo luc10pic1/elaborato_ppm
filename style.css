@@ -168,6 +168,23 @@ div[data-theme="STEELERS"]{
     font-family: proxima-nova,Roboto,Arial,san-serif;
 }
 
+.fs-2p6{
+    font-size: 2.6rem;
+}
+
+.lh-2p8{
+    line-height: 2.8rem;
+}
+
+.fs-1p7{
+    font-size: 1.7rem;
+}
+
+.lh-2p2{
+    line-height: 2.2rem;
+}
+
+
 .fw-550{
     font-weight: 550;
 }
@@ -592,6 +609,22 @@ div.section-trending__title::before {
 @media (min-width: 992px) {
     .article-secondary__title {
         font-size: 1.7rem;
+    }
+
+    .fs-lg-14{
+        font-size: 14px;
+    }
+
+    .lh-lg-1p8{
+        line-height: 1.8rem;
+    }
+
+    .fs-lg-1p5{
+        font-size: 1.5rem;
+    }
+
+    .lh-lg-1p3{
+        line-height: 1.3rem;
     }
 
     .border-lg-end{
