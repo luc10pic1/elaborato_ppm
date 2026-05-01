@@ -28,6 +28,47 @@ img {
     max-width: 100%;
 }
 
+.nav_link__first_header li:hover a{
+    color:#717171
+}
+
+#tendina{
+    display: none;
+    z-index: 101;
+    right: 10px;
+    background-color: white;
+}
+
+#tendina ul{
+    border-radius: 8px;
+    border: 1px solid #eeeeee;
+    width: 112px;
+    margin: 0;
+    padding: 10px;
+}
+
+#tendina ul li{
+    display: block;
+    border: none;
+}
+
+#tendina ul li a{
+    padding: 5px;
+    font-size: 13px;
+    font-weight: normal;
+    color:#222
+}
+
+#tendina ul li:hover a{
+    color:#717171;
+}
+
+
+.button_tendina:hover #tendina{
+    display: block;
+}
+
+
 button {
     width: 100%;
     height: 37px;
@@ -136,6 +177,24 @@ div[data-theme="STEELERS"]{
     display: block;
 }
 
+#link_subnav-0:hover + #subnav-0{
+    display: block;
+}
+
+#subnav-0:hover{
+    display: block;
+}
+
+.subnav{
+    background-color: #222;
+    color: white;
+    display: none;
+    width: 830px;
+    margin-right: calc((100% - 830px) / 2);
+
+}
+
+
 .header__navigation_bar{
     border-top: 4px solid #1fb25a;
     background-color: #222;
@@ -198,19 +257,19 @@ div[data-theme="STEELERS"]{
 }
 
 .nav_link__first_header a{
-    font-weight: 700;
+    font-weight: 550;
     font-size:14px;
     padding: 0 9px;
     transition:  color 0.2s ;
 }
 
+
+
 header img{
     max-width: none;
 }
 
-.nav_link__first_header li:hover a{
-    color:#717171
-}
+
 
 .nav_link__sec_header ul{
     margin-top: auto;
@@ -218,10 +277,14 @@ header img{
 }
 
 .header__button{
+
+
+}
+
+.header__button a{
     padding:0.5rem 0.8rem;
     border: 1px solid #777;
     border-radius: 5px;
-
 }
 
 .header__button button{
@@ -303,11 +366,6 @@ header img{
     color:#aaa;
 }
 
-.subnav{
-    background-color: #222;
-    color: white;
-    display: none;
-}
 
 .nav_link__sec_header__center a:hover .subnav{
     display: block;
@@ -324,13 +382,16 @@ header img{
     font-weight: normal;
 }
 
-.nav_link__sec_header li:hover{
-    background-color: white;
-}
 .nav_link__sec_header li:hover a{
     color: black;
+    background-color: white;
+
 }
 
+.sticky-offset{
+    top:50px;
+    z-index: 1;
+}
 
 .article__justin a {
     font-size: 1.4rem;
