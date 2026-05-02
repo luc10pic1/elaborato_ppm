@@ -10,14 +10,6 @@ html {
     overflow-x: hidden;
 }
 
-.bg-grey {
-    background-color: #aaa
-}
-
-.h-200 {
-    height: 200px;
-}
-
 a {
     color: #000000;
     text-decoration: none;
@@ -261,9 +253,6 @@ footer a:hover{
     border-top: 4px solid #222;
 }
 
-.lh-1p3{
-    line-height: 1.3rem;
-}
 
 .f-fam{
     font-family: proxima-nova,Roboto,Arial,san-serif;
@@ -318,10 +307,6 @@ header img{
     margin-bottom: 0;
 }
 
-.header__button{
-
-
-}
 
 .header__button a{
     padding:0.5rem 0.8rem;
@@ -361,10 +346,6 @@ header img{
     margin-top:8px;
 }
 
-.nav_link__sec_header__center{
-
-}
-
 .close_subnav{
     width: 40px;
     height: 40px;
@@ -382,8 +363,6 @@ header img{
     display: none;
 }
 
-.nav_link__sec_header__center li{
-}
 
 .nav_link__sec_header__center a{
     color:white;
