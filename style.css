@@ -61,7 +61,7 @@ img {
 }
 
 
-button {
+button, label {
     width: 100%;
     height: 37px;
     font-size: 1.2rem;
@@ -70,6 +70,11 @@ button {
     border-radius: 5px;
     border: 2px solid;
     transition: background-color 0.3s;
+}
+
+label{
+    border:none;
+    cursor: pointer;
 }
 
 button:hover {
@@ -331,7 +336,11 @@ header img{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    border: none;
+    cursor: pointer;
 }
+
+
 
 
 .nav_link__sec_header__center ul{
@@ -712,6 +721,113 @@ div.section-trending__title::before {
     color: #222;
 }
 
+footer ul{
+    width: 135px;
+}
+
+.menu-lat{
+    height: 100vh;
+    width: 250px;
+    background-color:#222 ;
+    display: none;
+    margin-top: 9px;
+    padding-top:10px;
+    z-index: 999;
+    overflow-y:auto ;
+    scrollbar-width: none;
+}
+
+.h-25{
+    height: 25px;
+}
+
+.menu-lat__open-subnav{
+    text-transform: uppercase;
+    border-left: 4px solid;
+}
+
+.menu-lat ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.menu-lat ul li a, .menu-lat ul li label{
+    color:#fff;
+    font-size: 14px;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 40px;
+    font-weight: 600;
+}
+
+.menu-lat-subnav{
+    display: none;
+    background-color: #555;
+    text-transform: none;
+}
+
+.menu-lat .menu-lat-subnav li a{
+    padding-left: 60px ;
+    transition: padding-left 0.2s;
+}
+
+.menu-lat-subnav li a:hover{
+    padding-left: 70px;
+    color: #aaa;
+}
+
+
+.menu-lat__title-section{
+    color: #aaa;
+    font-size: 11px;
+    text-transform: uppercase;
+    padding-left: 1rem;
+}
+
+#toggle-menu:checked + .button-menu + .menu-lat {
+    display: block;
+}
+
+#toggle-menu-lat-home-subnav:checked + .toggle-menu-subnav-label + .menu-lat-subnav{
+    display: block;
+}
+
+#toggle-menu-lat-ae-subnav:checked + .toggle-menu-subnav-label + .menu-lat-subnav{
+    display: block;
+}
+
+#toggle-menu-lat-news-subnav:checked + .toggle-menu-subnav-label + .menu-lat-subnav{
+    display: block;
+}
+
+#toggle-menu-lat-local-subnav:checked + .toggle-menu-subnav-label + .menu-lat-subnav{
+    display: block;
+}
+
+#toggle-menu-lat-sports-subnav:checked + .toggle-menu-subnav-label + .menu-lat-subnav{
+    display: block;
+}
+
+#toggle-menu-lat-opinion-subnav:checked + .toggle-menu-subnav-label + .menu-lat-subnav{
+    display: block;
+}
+
+#toggle-menu-lat-life-subnav:checked + .toggle-menu-subnav-label + .menu-lat-subnav{
+    display: block;
+}
+
+#toggle-menu-lat-business-subnav:checked + .toggle-menu-subnav-label + .menu-lat-subnav{
+    display: block;
+}
+
+#toggle-menu-lat-pgh-subnav:checked + .toggle-menu-subnav-label + .menu-lat-subnav{
+    display: block;
+}
+
+
+
+
 @media (min-width: 1400px) {
 
     .w-lg-325{
@@ -770,6 +886,8 @@ div.section-trending__title::before {
     }
 }
 
+
+
 @media (min-width: 768px) {
     .border-md-none{
         border: none;
@@ -807,6 +925,8 @@ div.section-trending__title::before {
         line-height: 1.2;
         font-weight: 700;
     }
+
+
 }
 
 
