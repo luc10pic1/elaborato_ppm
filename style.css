@@ -775,6 +775,10 @@ footer ul {
     color: #aaa;
 }
 
+.menu-lat label:hover{
+    color:#aaa;
+}
+
 
 .menu-lat__title-section {
     color: #aaa;
